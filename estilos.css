@@ -1,0 +1,228 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+body {
+    background-color: rgba(32, 134, 37, 0.719);
+    color: rgb(86, 86, 150);
+}
+h1 {
+    color: rgb(190, 191, 202);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+h2 {
+    color: rgb(190, 191, 202);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+p{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: -22px;
+    margin: 1px;
+    text-align:initial
+
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+    }
+  }
+  .container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  li>a {
+    padding: 8px 24px;
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  a {
+    color: white;
+    text-decoration:none;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .img-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .video-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px; 
+    padding: 50px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    min-height:200px;
+    text-align: center;
+
+  }
+  
+  
+  .button-menu-toggle {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+  
+  
+    .nav-links {
+      display: none;
+    }
+  
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    }
+    .img-container {
+      flex-direction: column;
+    }
+    .video-container{
+      padding: 10px;
+      gap: 5px;
+    }
+    iframe, video {
+      max-width: 90%;
+    }
+
+  }
+  /* Estilos para el pie de página */
+footer {
+  background-color:rgb(255, 0, 0); /* Reemplaza "X" con el color deseado */
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: floralwhite; /* Reemplaza "X" con el color deseado para las letras */
+  font-size:small /* Reemplaza "X" con el tamaño de fuente deseado */
+}
+
+/* Estilos para el botón */
+footer button {
+  background-color: burlywood; /* Reemplaza "X" con el color deseado para el botón */
+  color: black; /* Reemplaza "X" con el color deseado para las letras del botón */
+  font-size: small; /* Reemplaza "X" con el tamaño de fuente deseado para el botón */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos adicionales para el botón cuando se le da clic */
+footer button:focus,
+footer button:hover {
+  /* Agrega estilos adicionales para resaltar el botón cuando se le da clic o se pasa el cursor sobre él */
+}
+.services-section {
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.services-item {
+  display: inline-block;
+  width: 33.33%;
+  padding: 20px;
+  box-sizing: border-box;
+  vertical-align: top; /* Alineación vertical arriba */
+}
+
+.services-item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 100%; /* Estilo redondeado */
+}
+
+.services-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.services-item p {
+  font-size: 14px;
+}
